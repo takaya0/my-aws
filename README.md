@@ -15,6 +15,7 @@ AWSの仕組みを内部から学ぶための学習プロジェクト。EC2・EL
 | テスト (FE) | Vitest / Playwright |
 | バリデーション | Zod |
 | Git hooks | Lefthook |
+| DB | PostgreSQL 18 / GORM |
 | コンテナ | Docker API |
 | バージョン管理 | mise |
 
