@@ -2,6 +2,7 @@ pre-commit:
   parallel: true
   commands:
     go-lint:
+      root: "api/"
       glob: "*.go"
       run: golangci-lint run
     fe-lint:
@@ -12,6 +13,7 @@ pre-commit:
 pre-push:
   commands:
     go-test:
+      root: "api/"
       run: go test ./...
     fe-test:
       root: "web/"
