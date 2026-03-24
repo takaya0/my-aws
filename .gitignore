@@ -1,5 +1,5 @@
 # Go
-/cmd/server/server
+api/server
 *.exe
 *.exe~
 *.dll
