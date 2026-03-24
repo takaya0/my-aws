@@ -1,0 +1,18 @@
+pre-commit:
+  parallel: true
+  commands:
+    go-lint:
+      glob: "*.go"
+      run: golangci-lint run
+    fe-lint:
+      root: "web/"
+      glob: "*.{ts,tsx}"
+      run: bun run lint
+
+pre-push:
+  commands:
+    go-test:
+      run: go test ./...
+    fe-test:
+      root: "web/"
+      run: bun run test
